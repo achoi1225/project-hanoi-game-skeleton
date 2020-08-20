@@ -7,22 +7,29 @@ class HanoiGame {
     const startTower = this.towers[startTowerIdx];
     const endTower = this.towers[endTowerIdx];
 
-    // if(startTowerIdx === endTowerIdx ||
-    //   startTower.length === 0 ||
-    //   ![0, 1, 2].includes(startTowerIdx) ||
-    //   ![0, 1, 2].includes(endTowerIdx)
-    //   ) return false;
     
     if (![0, 1, 2].includes(endTowerIdx)) return false;
     if (startTowerIdx === endTowerIdx) return false;
-    if (startTower.length === 0) return false;
     if (![0, 1, 2].includes(startTowerIdx)) return false;
+    if (startTower[startTower.length - 1] > endTower[endTower.length - 1]) return false
+    if (startTower.length === 0) return false;
     
     if (endTower.length === 0 || 
         startTower[startTower.length - 1] < endTower[endTower.length - 1]) return true;
   }
 
-  move(startTowerIdx, endTowerIdx) {}
+  move(startTowerIdx, endTowerIdx) {
+    if (this.isValidMove(startTowerIdx, endTowerIdx)) {
+      const startTower = this.towers[startTowerIdx];
+      const endTower = this.towers[endTowerIdx];
+
+      endTower.push(startTower.pop());
+      return true
+    }
+    else {
+      return false
+    }
+  }
 
   isWon() {}
 
