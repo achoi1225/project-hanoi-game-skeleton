@@ -1,7 +1,7 @@
 {
   "name": "project-hanoi-game-skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "Time to put your newfound mocha knowledge to the test! In this project you'll be following what is now a familiar pattern - running automated tests and writing code to pass those tests. The difference this time round is that we will only provide very minimal written information for the code you'll be writing. This project will revolve around reading the provided tests and then writing code to pass those tests.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,6 +14,16 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
-    "chai-spies": "^1.0.0"
-  }
+    "chai-spies": "^1.0.0",
+    "mocha": "^8.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achoi1225/project-hanoi-game-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/achoi1225/project-hanoi-game-skeleton/issues"
+  },
+  "homepage": "https://github.com/achoi1225/project-hanoi-game-skeleton#readme"
 }

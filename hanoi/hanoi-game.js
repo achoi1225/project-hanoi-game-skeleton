@@ -1,7 +1,12 @@
 class HanoiGame {
-  constructor() {}
+  constructor() {
+   
+  }
 
-  isValidMove(startTowerIdx, endTowerIdx) {}
+  isValidMove(startTowerIdx, endTowerIdx) {
+  
+
+  }
 
   move(startTowerIdx, endTowerIdx) {}
 
