@@ -31,7 +31,9 @@ class HanoiGame {
     }
   }
 
-  isWon() {}
+  isWon() {
+    return this.towers[1].length === 3 || this.towers[2].length === 3;
+  }
 
   // the below methods are complete and do not need to be modified
   print() {
